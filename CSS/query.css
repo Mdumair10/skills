@@ -1,0 +1,57 @@
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        position: fixed;
+        background-color: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    nav .fa-solid {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    /* -----Course------- */
+    .row {
+        flex-direction: column;
+    }
+
+    /* -------Textimonials------- */
+    .testimonials-col img {
+        width: 200px;
+        height: 40px;
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+
+    /* ------Call to Action------ */
+    .cta h1 {
+        font-size: 24px;
+    }
+
+    /* --------Blog Page--------- */
+    /* ---Blog Content--- */
+    .sub-header h1{
+        font-size: 24px;
+    }
+}
