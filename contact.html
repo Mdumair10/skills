@@ -1,18 +1,3 @@
-<?php
-@include 'config.php';
-error_reporting(0);
-  $name = mysqli_real_escape_string($conn, $_POST['name']);
-  $email = mysqli_real_escape_string($conn, $_POST['email']);
-  $subject = mysqli_real_escape_string($conn, $_POST['subject']);
-  $message = mysqli_real_escape_string($conn, $_POST['message']);
-
-  $query = "insert into contact( name, email, subject, message) values ('$name','$email','$subject','$message')";
-
-  mysqli_query($conn, $query);
-  header('localtion:contact.php');
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,7 +23,7 @@ error_reporting(0);
           <li><a href="./about.html">ABOUT</a></li>
           <li><a href="./course.html">COURSE</a></li>
           <li><a href="./blog.html">BLOG</a></li>
-          <li><a href="./contact.php">CONTACT</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
         </ul>
       </div>
       <i class="fa-solid fa-bars" onclick="showmenu()"></i>
@@ -81,7 +66,7 @@ error_reporting(0);
         </div>
       </div>
       <div class="contact-col">
-        <form  method="post">
+        <form action="./back.php" method="post">
           <input type="text" name="name" placeholder="Enter your name" required>
           <input type="email" name="email" placeholder="Enter email address" required>
           <input type="text" name="subject" placeholder="Enter your subject" required>
